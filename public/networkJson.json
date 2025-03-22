@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "router1",
+      "type": "router",
+      "name": "Router 1",
+      "upload": "104 kbps",
+      "download": "100 kbps",
+      "level": 0
+    },
+    {
+      "id": "switch1",
+      "type": "switch",
+      "name": "Switch 1",
+      "upload": "2.73 kbps",
+      "download": "100 kbps",
+      "level": 1
+    },
+    {
+      "id": "server1",
+      "type": "server",
+      "name": "Server 1",
+      "upload": "2.73 kbps",
+      "download": "100 kbps",
+      "level": 2
+    },
+    {
+      "id": "server2",
+      "type": "server",
+      "name": "Server 2",
+      "upload": "112 kbps",
+      "download": "100 kbps",
+      "level": 2
+    },
+    {
+      "id": "server3",
+      "type": "server",
+      "name": "Server 3",
+      "upload": "104 kbps",
+      "download": "100 kbps",
+      "level": 2
+    },
+    {
+      "id": "client1",
+      "type": "client",
+      "name": "Client 1",
+      "upload": "112 kbps",
+      "download": "100 kbps",
+      "level": 3
+    },
+    {
+      "id": "client2",
+      "type": "client",
+      "name": "Client 2",
+      "upload": "2.73 kbps",
+      "download": "100 kbps",
+      "level": 3
+    },
+    {
+      "id": "client3",
+      "type": "client",
+      "name": "Client 3",
+      "upload": "104 kbps",
+      "download": "100 kbps",
+      "level": 3
+    },
+    {
+      "id": "client4",
+      "type": "client",
+      "name": "Client 4",
+      "upload": "112 kbps",
+      "download": "100 kbps",
+      "level": 3
+    },
+    {
+      "id": "client5",
+      "type": "client",
+      "name": "Client 5",
+      "upload": "2.73 kbps",
+      "download": "100 kbps",
+      "level": 3
+    },
+    {
+      "id": "client6",
+      "type": "client",
+      "name": "Client 6",
+      "upload": "104 kbps",
+      "download": "100 kbps",
+      "level": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "router1",
+      "target": "switch1"
+    },
+    {
+      "source": "switch1",
+      "target": "server1"
+    },
+    {
+      "source": "switch1",
+      "target": "server2"
+    },
+    {
+      "source": "switch1",
+      "target": "server2"
+    },
+    {
+      "source": "switch1",
+      "target": "server3"
+    },
+    {
+      "source": "server1",
+      "target": "client1"
+    },
+    {
+      "source": "server1",
+      "target": "client2"
+    },
+    {
+      "source": "server1",
+      "target": "client3"
+    },
+    {
+      "source": "server2",
+      "target": "client4"
+    },
+    {
+      "source": "server2",
+      "target": "client5"
+    },
+    {
+      "source": "server2",
+      "target": "client6"
+    }
+  ]
+}
