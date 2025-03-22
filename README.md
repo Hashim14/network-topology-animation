@@ -30,6 +30,10 @@ You may also see any lint errors in the console.
 - NetworkJson.json contains the Nodes and Links to establish the project 
 - Horizontal and Vertical toggle button to toggle between dagmode
 
+
+https://github.com/user-attachments/assets/c1e8d400-6580-4ac9-b034-7391144d28cd
+
+
 <img width="1307" alt="Screenshot 2025-03-22 at 6 43 41 PM" src="https://github.com/user-attachments/assets/9733d1e1-f016-47bf-ba98-4c9de69a37bf" />
 <img width="1680" alt="Screenshot 2025-03-22 at 6 42 54 PM" src="https://github.com/user-attachments/assets/a793fea4-936a-48c6-be24-5d45b57fcc4f" /> 
 
