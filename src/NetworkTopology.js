@@ -17,20 +17,9 @@ const NetworkTopology = () => {
       const randomLink =
         data.links[Math.floor(Math.random() * data.links.length)];
       setTrafficLinks([randomLink]);
-    }, 2000); 
+    }, 2000);
     return () => clearInterval(interval);
   }, [data.links]);
-
-  const updateBandwidth = (data) => {
-    return {
-      ...data,
-      nodes: data.nodes.map((node) => ({
-        ...node,
-        uploadSpd: `${Math.floor(Math.random() * 100)} Kbps`, // Random upload speed
-        downloadSpd: `${Math.floor(Math.random() * 100)} Kbps`, // Random download speed
-      })),
-    };
-  };
 
   const toggleLayout = () => {
     setIsHorizontal(!isHorizontal);
@@ -38,7 +27,14 @@ const NetworkTopology = () => {
   return (
     <div>
       <h1>Network Topology</h1>
-      <button style={{backgroundColor: "yellow", color : "black", fontWeight : "bolder"}} onClick={toggleLayout}>
+      <button
+        style={{
+          backgroundColor: "yellow",
+          color: "black",
+          fontWeight: "bolder",
+        }}
+        onClick={toggleLayout}
+      >
         Toggle Layout: {isHorizontal ? "Horizontal" : "Vertical"}
       </button>
       <ForceGraph2D
@@ -73,10 +69,10 @@ const NetworkTopology = () => {
           );
         }}
         onNodeClick={(node) => {
-          console.log("Node clicked:", node);
+          alert("Node clicked:", node);
         }}
         onLinkClick={(link) => {
-          console.log("Link clicked:", link);
+         alert("Link clicked:", link);
         }}
         linkDirectionalParticleWidth={2}
         linkDirectionalParticleSpeed={0.01}
