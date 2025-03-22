@@ -22,4 +22,28 @@ You may also see any lint errors in the console.
 
 # Features 
 
+- React Force graph 2d for visualization
+- Implementation of netwrok topology
+- Animated Link for every 2 seconds
+- Handled OnClick and OnHover for nodes 
+- React hooks for state management
 - NetworkJson.json contains the Nodes and Links to establish the project 
+
+# JSON Structure 
+```
+{
+  "nodes": [
+    {
+      "id": "",
+      "type": "",
+      "name": "",
+      "upload": "",
+      "download": "",
+      "level": 0
+    }
+  ],
+"link" : [
+   "source": "",
+      "target": ""
+]
+  }
